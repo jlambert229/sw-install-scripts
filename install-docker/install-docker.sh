@@ -38,9 +38,6 @@ sudo apt-get update && sudo apt-get install -y \
     docker-compose-plugin
 
 # to manage docker as a non-root user
-# create the docker group
-sudo groupadd docker
-
 # add current running user to the docker group
 sudo usermod -aG docker "$DOCKER_USER"
 
