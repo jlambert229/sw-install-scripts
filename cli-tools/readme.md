@@ -51,12 +51,11 @@ Rip Grep Documentation: <https://github.com/BurntSushi/ripgrep>
 
 ## fzf
 
-
 fzf documentation: <https://github.com/junegunn/fzf>
 
 ## tmux
 
-## rq
+## httpie
 
 ## exa
 

@@ -143,7 +143,7 @@ if [[ ! "$opt" =~ "-K -E" ]] && tmux list-panes -F '#F' | grep -q Z; then
   zoomed_without_popup=1
   original_window=$(tmux display-message -p "#{window_id}")
   tmp_window=$(tmux new-window -d -P -F "#{window_id}" "bash -c 'while :; do for c in \\| / - '\\;' do sleep 0.2; printf \"\\r\$c fzf-tmux is running\\r\"; done; done'")
-  tmux swap-pane -t $tmp_window \; select-window -t $tmp_window
+  tmux swap-pane -t $tmp_window \; select-window -t "$tmp_window"
 fi
 
 set -e
